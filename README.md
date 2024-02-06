@@ -1,7 +1,17 @@
-# Vue 3 + Vite
+# Esercizio di oggi: Pokévuex
+### Nome repo: vite-yu-gi-oh (a tema pokemon)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### Descrizione
+Create un nuovo progetto utilizzando Vite e Vue 3 e definite i componenti necessari per strutturare un layout a tema Pokémon.<br>
+Al caricamento della pagina, effettuate una chiamata all'API di Pokémon<br>
+Cerchiamo di utilizzare lo store management per prenderci confidenza<br>
+Qui trovate la documentazione: https://documenter.getpostman.com/view/1276443/2s8ZDbVLPF
 
-## Recommended IDE Setup
+### NOTE
+Usate Postman per studiare la risposta!! (link a postman allegato)<br>
+Vi allego uno screen di una mia vecchia App Pokemon dalla quale potete trarre spunto per la grafica<br>
+Se qualche immagine non dovesse funzionare  non preoccupatevene troppo(ma mettete gli alt!)<br>
+Con i dati restituiti, stampate una card per ogni Pokémon.<br>
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### BONUS
+Creare un componente loader da visualizzare fino a quando i risultati non siano pronti.
