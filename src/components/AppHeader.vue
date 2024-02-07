@@ -26,6 +26,7 @@ header {
 
     figure {
         height: 200px;
+        background-color: rgba($color: #ffffff, $alpha: 0.8);
 
         img {
             margin: 0 auto;
