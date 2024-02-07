@@ -13,7 +13,9 @@ export default {
     <main>
         <div class="container">
             <div class="pokedex">
-                <div class="pokedex-screen">
+                <div class="pokedex-screen ">
+                </div>
+                <div class="pokedex-screen pokelist">
                     <AppPokelist v-for="pokemon in pokemons" :key="pokemon._id" v-bind="pokemon" />
                 </div>
             </div>
@@ -30,12 +32,23 @@ main {
 
     .pokedex {
         display: flex;
+        height: 600px;
+        background-color: red;
+        border-radius: 10px;
+        padding: 3rem;
+        margin-top: 50px;
     }
 
     .pokedex-screen {
+        overflow-y: auto;
+    }
+
+    .pokedex-screen.pokelist {
         display: flex;
-        justify-content: space-between;
-        grid-template-columns: repeat(2, 50%);
+        flex-wrap: wrap;
+        width: 50%;
+        background-color: rgb(195, 195, 195);
+        border-radius: 10px;
     }
 }
 </style>

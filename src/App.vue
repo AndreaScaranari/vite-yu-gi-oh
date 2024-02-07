@@ -39,7 +39,7 @@ export default {
 @use "./scss/style.scss";
 
 .bg {
-    height: calc(100vh);
+    height: 100vh;
     background-image: url("./assets/imgs/pokemon_bg.jpg");
     background-size: cover;
 }
