@@ -10,7 +10,6 @@ export default {
     components: { AppHeader, AppMain },
     methods: {
         fetchPokemon(endpoint = apiUri) {
-            store.isLoading = true;
             axios.get(endpoint).then(res => {
                 const pokemons = res.data.docs;
 
@@ -18,12 +17,24 @@ export default {
                     const { name, number, type1, imageUrl } = pokemon;
                     return { name, number, mainType: type1, imageUrl };
                 });
-            }).catch(err => { console.errorer(err) })
-                .then(() => { store.isLoading = false })
+            })
         },
+        fetchTypes() {
+            axios.get(apiUri + "/types1").then(res => {
+                store.types = res.data.map((type, i) => {
+                    return {
+                        id: i + 1,
+                        label: type,
+                        value: type
+                    }
+                })
+            })
+
+        }
     },
     created() {
         this.fetchPokemon();
+        this.fetchTypes();
     }
 }
 </script>

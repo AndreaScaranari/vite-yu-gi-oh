@@ -7,11 +7,6 @@ export default {
         number: Number,
         mainType: String
     },
-    // computed: {
-    //     bgColor() {
-    //         return colorMap[this.mainType];
-    //     }
-    // }
 }
 </script>
 
